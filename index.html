@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pizarra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coustard&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="general">
+      <div class="pizarra_titulo">
+        <h1>Pizarra</h1>
+      </div>
+      <div class="pizarra">
+        <canvas
+          width="800"
+          height="500"
+          id="pizarra"
+          class="pizarra_borde"
+          aria-describedby="ayuda_pizarra"
+        >
+        </canvas>
+        <div id="ayuda_pizarra" class="form-text">
+          Para dibujar: en la pizarra, mantenga presionado click derecho y mueva
+          el mouse.
+        </div>
+      </div>
+      <div class="opciones">
+        <div class="estilos">
+          <h2>Estilos</h2>
+          <input type="radio" id="libre" name="estilo" value="libre" />
+          <label for="libre">Libre</label> <br />
+          <input type="radio" id="abanico" name="estilo" value="abanico" />
+          <label for="abanico">Abanico</label>
+        </div>
+
+        <div class="caja_herramientas">
+          <h2>Opciones</h2>
+          <input type="color" id="color_picker" name="color_picker" />
+          <br />
+          <button type="button" id="eraser" name="eraser">Borrar todo</button
+          ><br />
+          <div class="grosor_linea">
+            <p id="grosor_linea__titulo" name="grosor_linea__titulo">1</p>
+            <div class="grosor_linea__botones">
+              <button type="button" id="mas_grosor" name="mas_grosor">+</button>
+              <button type="button" id="menos_grosor" name="menos_grosor">-</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
