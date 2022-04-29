@@ -2,8 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    
-  
+    font-family: 'Orelega One', cursive;
 }
 
 .general{
@@ -12,6 +11,7 @@
     grid-template-areas: 
     "a b"
     "a b";
+    margin-top: 20px;
 }
 
 
@@ -34,10 +34,6 @@
     border: 3px solid black;
 }
 
-
-
-
-
 .opciones{
     display: flex;
     flex-direction: column;
@@ -47,34 +43,31 @@
 }
 
 
-
-.grosor_linea{
-    display: flex;
-    flex-direction: row;
-    border: solid 1px aqua;
-    
+.caja{
+    margin-bottom: 20px;
 }
-
+.caja>h2{
+    margin-bottom: 5px;
+}
 .grosor_linea__botones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline
 }
 
 
 
 h1{
-    font-family: 'Coustard', serif;
+
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 3px;
     
 }
 #ayuda_pizarra, h2{
-    font-family: 'Coustard', serif;
     letter-spacing: 2px;
 }
 #ayuda_pizarra{
     font-size: small;
 }
-
+#mas_grosor, #menos_grosor, #eraser{
+    padding: 2px 5px;
+}
